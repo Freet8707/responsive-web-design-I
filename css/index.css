@@ -67,7 +67,7 @@ header {
 	height: 90px;
 	margin-bottom: 90px;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-around;
 	align-items: flex-end;
 }
 
@@ -83,14 +83,13 @@ header .links a {
 }
 
 header section img {
-	height: 70px;
+	width: 190px;
+	height: 35px;
 }
 
-header .logoRight {
-	display: flex;
-	width: 25%;
-	justify-content: flex-start;
-}
+/* header .logoRight {
+	width: 25%;	
+} */
 
 h1 {
 	font-size: 85px;
@@ -112,22 +111,29 @@ h1 {
 
 .container {
 	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 	margin-bottom: 90px;
 }
 
 .container .sectionTwo {
-	width: 48%;
+	width: 45%;
+	margin-left: 5%;
+	/* border: 1px solid black; */
 	height: 360px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 }
 
 .container .headerImg {
+	padding-left: 8%;
 	width: 48%;
+	/* border: 1px solid black; */
 	height: 400px;
-	display: flex;
-	justify-content: center;
+	/* display: flex;
+	justify-content: center; */
 }
 
 .middle-text h2 {
@@ -139,10 +145,10 @@ h1 {
 }
 
 .middle-text {
-	margin: 0 50px 70px 50px;
+	margin: 0 5% 70px 5%;
 	padding-top: 20px;
 	border-top: 2px solid black;
-	width: 100%;
+	/* width: 100%; */
 	display: flex;	
 }
 
@@ -157,14 +163,16 @@ h1 {
 }
 
 .botSection {
-	margin: 0 50px 70px 50px;
+	margin: 0 5% 70px 5%;
 	padding-top: 20px;
-	width: 100%;
+	/* width: 100%; */
 	display: flex;
+	justify-content: space-between;
 }
 
 .botSection div {
-	margin-right: 70px;
+	padding: 0 2%;
+	/* margin-right: 70px; */
 }
 
 .botSection h2 {
@@ -172,9 +180,9 @@ h1 {
 }
 
 .contactDetails {
-	margin: 0 10px 40px 50px;
+	margin: 0 5% 40px 5%;
 	padding-top: 40px;
-	width: 100%;
+	/* width: 100%; */
 	border-top: 2px solid black;
 	display: flex;
 	flex-direction: column;
