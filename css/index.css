@@ -127,13 +127,17 @@ h1 {
 	align-items: center;
 }
 
+.headerImg .rightCol {
+	width: 75%;
+	/* height: 400px; */
+}
+
 .container .headerImg {
-	padding-left: 8%;
-	width: 48%;
-	/* border: 1px solid black; */
-	height: 400px;
-	/* display: flex;
-	justify-content: center; */
+	/* padding-left: 8%; */
+	width: 50%;
+	/* border: 1px solid black; */	
+	display: flex;
+	justify-content: center;
 }
 
 .middle-text h2 {
