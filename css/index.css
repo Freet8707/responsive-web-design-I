@@ -1,3 +1,192 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	margin-right: 3%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+header {
+	width: 100%;
+	height: 90px;
+	margin-bottom: 90px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+header .links {
+	width: 75%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+header .links a {	
+	text-decoration: none;
+	color: #d2d1d6;
+}
+
+header section img {
+	height: 70px;
+}
+
+header .logoRight {
+	display: flex;
+	width: 25%;
+	justify-content: flex-start;
+}
+
+h1 {
+	font-size: 85px;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.leftCol {
+	border: 1px solid black;
+	color: black;
+	font-size: 20px;
+	padding: 10px 40px 10px 40px;
+	text-decoration: none;
+}
+
+/*.rightCol {
+	margin-right: 96px;
+}*/
+
+.container {
+	display: flex;
+	margin-bottom: 90px;
+}
+
+.container .sectionTwo {
+	width: 48%;
+	height: 360px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container .headerImg {
+	width: 48%;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+}
+
+.middle-text h2 {
+	font-size: 20pt;
+}
+
+.inner-Left {
+	margin-right: 90px;
+}
+
+.middle-text {
+	margin: 0 50px 70px 50px;
+	padding-top: 20px;
+	border-top: 2px solid black;
+	width: 100%;
+	display: flex;	
+}
+
+.centerImg .middle-img {
+	width: 90%;
+}
+
+.centerImg {
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.botSection {
+	margin: 0 50px 70px 50px;
+	padding-top: 20px;
+	width: 100%;
+	display: flex;
+}
+
+.botSection div {
+	margin-right: 70px;
+}
+
+.botSection h2 {
+	font-size: 20pt;
+}
+
+.contactDetails {
+	margin: 0 10px 40px 50px;
+	padding-top: 40px;
+	width: 100%;
+	border-top: 2px solid black;
+	display: flex;
+	flex-direction: column;
+}
+
+.contactDetails h2 {
+	font-size: 20pt;
+}
+
+.copyRight {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
 
