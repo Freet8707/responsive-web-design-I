@@ -67,7 +67,6 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .headContainer {
-    border: 1px solid black;
 	height: 90px;
 	margin-bottom: 90px;
 	display: flex;
@@ -76,7 +75,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .headContainer .headLinks {
-    border: 1px solid black;
 	width: 75%;
 	display: flex;
 	justify-content: space-evenly;
@@ -194,6 +192,51 @@ h1, h2, h3, h4, h5 {
     display: flex;
 }
 
+.closeInfo h2 {	
+	font-size: 15pt;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li::before {
+	content: "\2022";
+	font-weight: bold;
+	width: 1em;
+}
+
+.closeInfo .textClose {
+	margin: 0 2% 0 5%;
+    width: 42%;
+    height: 300px;
+    /* min-width: 520px;     */
+}
+
+.closeInfo .closeImg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.closeInfo .closeImg img {
+    width: 80%;
+}
+
+.closeInfo {
+    width: 90%;
+    padding: 25px 0;
+	margin: 40px 2% 0 5%;	
+	border-top: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.copyR {
+	width: 100%;
+	text-align: center;
+}
+
 /* .bodyBoxes {
     margin-left: 5%;
     margin-right: 2%;
@@ -244,6 +287,29 @@ h1, h2, h3, h4, h5 {
 
     .last2 {
         flex-direction: column;
+    }
+
+    .closeInfo .textClose {
+        margin: 0 5% 0 5%;
+        width: 90%;
+        /* min-width: 520px;     */
+    }
+
+    .closeInfo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .closeInfo .closeImg {
+        width: 90%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .closeInfo .closeImg img {
+        width: 60%;
     }
 }
 
