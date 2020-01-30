@@ -290,4 +290,20 @@ h1 {
 	.inner-right {
 		margin-top: 20px;
 	}
+
+	.botSection {
+		flex-direction: column;
+	}
+
+	.midBotSect {
+		margin-top: 55px;
+	}
+	
+	.rightBotSect {
+		margin-top: 55px;
+	}
+
+	.copyRight {
+		margin-bottom: 75px;
+	}
 } 
