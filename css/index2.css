@@ -313,6 +313,117 @@ ul li::before {
     }
 }
 
+@media (max-width: 500px) {
+	header section img {
+		width: 190px;
+		height: 35px;
+		margin-top: 270px;
+		margin-bottom: 0;
+	}
+
+	.headContainer .headLinks {
+		margin-top: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.headContainer {
+	width: 100%;
+	margin: 0 0 295px 0;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	} 
+
+	.headContainer .headLinks a {
+		width: 90%;
+		text-align: center;
+		padding: 12px 0;
+		margin: 0;
+		font-size: 1.5em;
+		border-bottom: 1px solid #d2d1d6;
+	}
+	
+	#topNavServ {
+		border-top: 1px solid #d2d1d6;
+	}
+
+	.imgContainer {
+		display: none;
+	}
+
+	.servicesDesc {
+		/* margin: 0 auto; */
+		padding: 0 25px 15px 25px;
+		background-color: lightslategray;
+		border: 1px solid black;
+	}
+
+	.bodyBoxes {		
+		width: 100%;
+		margin-left: 1%;
+		margin-top: 20px;
+	}
+
+	.bodyBoxes div{		
+		background-color: lightslategray;
+	}
+
+	.bodyBoxes div a {
+		background-color: white;
+	}
+	
+	.bodyBoxes h2 {
+		text-align: center;
+	}
+	
+	.nextBodyBoxes {		
+		width: 100%;
+		margin-left: 1%;
+	}
+
+	.nextBodyBoxes div{		
+		background-color: lightslategray;
+	}
+
+	.nextBodyBoxes div p {		
+		padding-bottom: 20px;
+	}
+
+	.nextBodyBoxes div a {
+		background-color: white;
+	}
+	
+	.nextBodyBoxes h2 {
+		text-align: center;
+	}
+	
+	.last2 {		
+		width: 100%;
+		margin-left: 1%;
+	}
+
+	.last2 div{		
+		background-color: lightslategray;
+	}
+
+	.last2 div p {		
+		padding-bottom: 20px;
+	}
+
+	.last2 div a {
+		background-color: white;
+	}
+	.last2 h2 {
+		text-align: center;
+	}
+	.closeInfo .closeImg .services-info-img {
+		width: 85%;
+	}	
+}
+
 /* h1 {
 	font-size: 85px;
 	text-align: center;
