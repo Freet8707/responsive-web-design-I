@@ -1,0 +1,648 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	margin-right: 3%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.headContainer {
+	height: 90px;
+	margin-bottom: 90px;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.headContainer .headLinks {
+	width: 75%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.headContainer .headLinks a{
+    font-size: 1.2em;	
+	text-decoration: none;
+	color: #d2d1d6;
+}
+
+.headContainer section .logo {
+    width: 190px;
+	height: 35px;
+}
+
+.headContainer .logo {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.imgContainer .services-header-img {
+    width: 90%;
+}
+
+.imgContainer {
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.servicesDesc h2 {
+	font-size: 20pt;
+}
+
+.servicesDesc {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 2%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyBoxes h2 {
+	font-size: 15pt;
+}
+
+.bodyBoxes a {
+	border: 1px solid black;
+	border-radius: 5px;
+	color: black;
+	text-decoration: none;
+	padding: 0 40px 0 40px;
+}
+
+.bodyBoxes div {
+    width: 42%;
+    margin: 20px 4%;
+    height: 280px;
+    padding: 20px 20px 0 20px;
+    border: 1px solid black;
+}
+
+.bodyBoxes {
+    display: flex;
+}
+
+.nextBodyBoxes h2 {
+	font-size: 15pt;
+}
+
+.nextBodyBoxes a {
+	border: 1px solid black;
+	border-radius: 5px;
+	color: black;
+	text-decoration: none;
+	padding: 0 40px 0 40px;
+}
+
+.nextBodyBoxes div {
+    width: 42%;
+    margin: 20px 4%;
+    height: 260px;
+    padding: 20px 20px 0 20px;
+    border: 1px solid black;
+}
+
+.nextBodyBoxes {
+    display: flex;
+}
+
+.last2 div h2 {
+	font-size: 15pt;
+}
+
+.last2 div a {
+	border: 1px solid black;
+	border-radius: 5px;
+	color: black;
+	text-decoration: none;
+	padding: 0 40px 0 40px;
+}
+
+.last2 div {
+    width: 42%;
+    margin: 20px 4%;
+    height: 260px;
+    padding: 20px 20px 0 20px;
+    border: 1px solid black;
+}
+
+.last2 {
+    display: flex;
+}
+
+.closeInfo h2 {	
+	font-size: 15pt;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li::before {
+	content: "\2022";
+	font-weight: bold;
+	width: 1em;
+}
+
+.closeInfo .textClose {
+	margin: 0 2% 0 5%;
+    width: 42%;
+    height: 300px;
+    /* min-width: 520px;     */
+}
+
+.closeInfo .closeImg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.closeInfo .closeImg img {
+    width: 80%;
+}
+
+.closeInfo {
+    width: 90%;
+    padding: 25px 0;
+	margin: 40px 2% 0 5%;	
+	border-top: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.copyR {
+	width: 100%;
+	text-align: center;
+}
+
+/* .bodyBoxes {
+    margin-left: 5%;
+    margin-right: 2%;
+	margin-bottom: 50px;
+	display: flex;
+} */
+
+@media (max-width: 800px) {
+    .headContainer {
+        height: 120px;
+        margin-bottom: 35px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headContainer section .logo {
+        margin-bottom: 20px;
+    }
+
+    .headContainer .headLinks {
+        width: 90%;
+    }
+
+    .servicesDesc h2 {
+        align-self: center;
+    }
+
+    .bodyBoxes div {
+        width: 90%;
+    }
+
+    .bodyBoxes {
+        flex-direction: column;
+    }
+
+    .nextBodyBoxes div {
+        width: 90%;
+    }
+
+    .nextBodyBoxes {
+        flex-direction: column;
+    }
+
+    .last2 div {
+        width: 90%;
+    }
+
+    .last2 {
+        flex-direction: column;
+    }
+
+    .closeInfo .textClose {
+        margin: 0 5% 0 5%;
+        width: 90%;
+        /* min-width: 520px;     */
+    }
+
+    .closeInfo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .closeInfo .closeImg {
+        width: 90%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .closeInfo .closeImg img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+	header section img {
+		width: 190px;
+		height: 35px;
+		margin-top: 270px;
+		margin-bottom: 0;
+	}
+
+	.headContainer .headLinks {
+		margin-top: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.headContainer {
+	width: 100%;
+	margin: 0 0 295px 0;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	} 
+
+	.headContainer .headLinks a {
+		width: 90%;
+		text-align: center;
+		padding: 12px 0;
+		margin: 0;
+		font-size: 1.5em;
+		border-bottom: 1px solid #d2d1d6;
+	}
+	
+	#topNavServ {
+		border-top: 1px solid #d2d1d6;
+	}
+
+	.imgContainer {
+		display: none;
+	}
+
+	.servicesDesc {
+		/* margin: 0 auto; */
+		padding: 0 25px 15px 25px;
+		background-color: lightslategray;
+		border: 1px solid black;
+	}
+
+	.bodyBoxes {		
+		width: 100%;
+		margin-left: 1%;
+		margin-top: 20px;
+	}
+
+	.bodyBoxes div{		
+		background-color: lightslategray;
+	}
+
+	.bodyBoxes div a {
+		background-color: white;
+	}
+	
+	.bodyBoxes h2 {
+		text-align: center;
+	}
+	
+	.nextBodyBoxes {		
+		width: 100%;
+		margin-left: 1%;
+	}
+
+	.nextBodyBoxes div{		
+		background-color: lightslategray;
+	}
+
+	.nextBodyBoxes div p {		
+		padding-bottom: 20px;
+	}
+
+	.nextBodyBoxes div a {
+		background-color: white;
+	}
+	
+	.nextBodyBoxes h2 {
+		text-align: center;
+	}
+	
+	.last2 {		
+		width: 100%;
+		margin-left: 1%;
+	}
+
+	.last2 div{		
+		background-color: lightslategray;
+	}
+
+	.last2 div p {		
+		padding-bottom: 20px;
+	}
+
+	.last2 div a {
+		background-color: white;
+	}
+	.last2 h2 {
+		text-align: center;
+	}
+	.closeInfo .closeImg .services-info-img {
+		width: 85%;
+	}	
+}
+
+/* h1 {
+	font-size: 85px;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.leftCol {
+	border: 1px solid black;
+	color: black;
+	font-size: 20px;
+	padding: 10px 40px 10px 40px;
+	text-decoration: none;
+}
+
+/*.rightCol {
+	margin-right: 96px;
+}*/
+
+/* .container {
+	display: flex;
+	margin-bottom: 90px;
+}
+
+.container .sectionTwo {
+	width: 48%;
+	height: 360px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container .headerImg {
+	width: 48%;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+}
+
+.middle-text h2 {
+	font-size: 20pt;
+}
+
+.inner-Left {
+	margin-right: 90px;
+}
+
+.middle-text {
+	margin: 0 50px 70px 50px;
+	padding-top: 20px;
+	border-top: 2px solid black;
+	width: 100%;
+	display: flex;	
+}
+
+.centerImg .middle-img {
+	width: 90%;
+}
+
+.centerImg {
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.botSection {
+	margin: 0 50px 70px 50px;
+	padding-top: 20px;
+	width: 100%;
+	display: flex;
+}
+
+.botSection div {
+	margin-right: 70px;
+}
+
+.botSection h2 {
+	font-size: 20pt;
+}
+
+.contactDetails {
+	margin: 0 10px 40px 50px;
+	padding-top: 40px;
+	width: 100%;
+	border-top: 2px solid black;
+	display: flex;
+	flex-direction: column;
+}
+
+.contactDetails h2 {
+	font-size: 20pt;
+}
+
+.copyRight {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.logo {
+	height: 40px;
+	margin-right: 3%;
+}
+
+.headContainer {
+	width: 100%;
+	height: 90px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+.headContainer .headLinks {
+	width: 75%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.headContainer .headLinks a {
+	text-decoration: none;
+	color: #d2d1d6;
+}
+
+.headContainer section {	
+	width: 25%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.services-header-img {
+	width: 1179px;
+}
+
+.imgContainer {
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.servicesDesc h2 {
+	font-size: 20pt;
+}
+
+.servicesDesc {
+	margin-left: 85px;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+	border-bottom: 2px solid black;
+	display: flex;
+	flex-direction: column;
+}
+
+.bodyBoxes h2 {
+	font-size: 15pt;
+}
+
+.bodyBoxes a {
+	border: 1px solid black;
+	border-radius: 5px;
+	color: black;
+	text-decoration: none;
+	padding: 0 40px 0 40px;
+}
+
+.bodyBoxes p {
+	margin-bottom: 20px;
+}
+.bodyBoxes div {
+	height: 220px;
+	width: 475px;
+	margin: 50px;
+	padding: 20px;
+	min-width: 400px;
+	border: 1px solid black;
+}
+
+.bodyBoxes {
+	margin-left: 85px;
+	margin-bottom: 50px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.closeInfo img {
+	margin-right: 50px;
+}
+
+.closeInfo h2 {	
+	font-size: 15pt;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li::before {
+	content: "\2022";
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+}
+
+.closeInfo div {
+	margin: 0 85px 0 85px;
+	width: 540px;
+	height: 300px;
+	min-width: 520px;
+}
+
+.closeInfo {
+	margin-left: 85px;
+	margin-bottom: 50px;
+	padding-top: 30px;
+	border-top: 2px solid black;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.copyR {
+	width: 100%;
+	text-align: center;
+} */ */
